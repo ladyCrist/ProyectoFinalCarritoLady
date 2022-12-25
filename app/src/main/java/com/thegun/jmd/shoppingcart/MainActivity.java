@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements ProductAdapter.CallBackUs, ProductAdapter.HomeCallBack {
 
-    public static ArrayList<ProductModel> arrayList = new ArrayList<>();
+    int arrayList[];
     public static int cart_count = 0;
     ProductAdapter productAdapter;
     RecyclerView productRecyclerView;
@@ -39,40 +39,6 @@ public class MainActivity extends AppCompatActivity implements ProductAdapter.Ca
     }
 
     private void addProduct() {
-        ProductModel productModel = new ProductModel("Batidora S/.40", "40", "20", R.drawable.batidora);
-        arrayList.add(productModel);
-        ProductModel productModel1 = new ProductModel("Cafetera S/.85", "85", "10", R.drawable.cafetera);
-        arrayList.add(productModel1);
-        ProductModel productModel2 = new ProductModel("Cocina S/.300", "300", "10", R.drawable.cocina);
-        arrayList.add(productModel2);
-
-        ProductModel productModel3 = new ProductModel("Extractora S/.70", "70", "20", R.drawable.extractora);
-        arrayList.add(productModel3);
-        ProductModel productModel12 = new ProductModel("Freidora S/.250", "250", "10", R.drawable.freidora);
-        arrayList.add(productModel12);
-        ProductModel productModel23 = new ProductModel("Hervidora S/.60", "60", "10", R.drawable.hervidora);
-        arrayList.add(productModel23);
-
-        ProductModel productModel4 = new ProductModel("Licuadora S/.77", "77", "20", R.drawable.licuadora);
-        arrayList.add(productModel4);
-        ProductModel productModel14 = new ProductModel("Microondas S/.220", "220", "10", R.drawable.microondas);
-        arrayList.add(productModel14);
-        ProductModel productModel25 = new ProductModel("Olla Presión S/.99", "99", "10", R.drawable.ollapresion);
-        arrayList.add(productModel25);
-
-        ProductModel productModel5 = new ProductModel("Parrillera S/.100", "100", "20", R.drawable.parrillera);
-        arrayList.add(productModel5);
-        ProductModel productModel16 = new ProductModel("Plancha S/.50", "50", "10", R.drawable.plancha);
-        arrayList.add(productModel16);
-        //ProductModel productModel17 = new ProductModel("Refrigeradora", "200", "10", R.drawable.refrigeradora);
-        //arrayList.add(productModel17);
-
-        ProductModel productModel18 = new ProductModel("Sarten S/.69", "69", "10", R.drawable.sarten);
-        arrayList.add(productModel18);
-        ProductModel productModel19 = new ProductModel("Tostadora S/.120", "120", "10", R.drawable.tostadora);
-        arrayList.add(productModel19);
-        ProductModel productModel20 = new ProductModel("Waflera S/.88", "88", "10", R.drawable.waflera);
-        arrayList.add(productModel20);
     }
 
     @Override
