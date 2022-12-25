@@ -50,27 +50,4 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_SHORT).show();
         }
     }
-
-    public void InitLogin(View view){
-        String user = txtUsu.getText().toString();
-        String password = txtPass.getText().toString();
-
-        if(user.equals("admin1")){
-            if(password.equals("admin123")) {
-                Toast.makeText(getApplicationContext(),"Bienvenido!",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(this, VistaAdmin.class));
-            } else {
-                Toast.makeText(getApplicationContext(),"La contraseña es incorrecta!",Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        if(user.equals("cliente1")){
-            if(password.equals("12345")) {
-                Toast.makeText(getApplicationContext(),"Bienvenido!",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(this, MainActivity.class));
-            } else {
-                Toast.makeText(getApplicationContext(),"La contraseña es incorrecta!",Toast.LENGTH_SHORT).show();
-            }
-        }
-    }
 }
